@@ -1,0 +1,22 @@
+<div id="progress-bar" style="width: 0%;"></div>
+
+<script>
+  var progressbar = document.getElementById("progress-bar");
+  console.log(progressbar.style.width);
+
+  var currentProgress = 0;
+
+  function progress() {
+    if(currentProgress <= 95) {
+      currentProgress += 10;
+      progressbar.style.width = currentProgress + "%";
+      setTimeout(function() {
+        progress()
+      }, 250);
+    }
+  }
+
+  setTimeout(function() {
+    progress()
+  }, 250);
+</script>

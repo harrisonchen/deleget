@@ -1,0 +1,61 @@
+@import 'bootstrap';
+
+$brand-color: #00FF82;
+$opaque-brand-color: rgba(0, 255, 130, 0.25);
+
+body {
+  height: 2000px;
+}
+
+.brand-color {
+  color: $brand-color;
+}
+
+#progress-bar {
+  position: fixed;
+  background-color: $brand-color;
+  top: 0;
+  height: 3px;
+
+  transition: all 0.2s linear;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+  border: 0px solid #000000;
+  border-bottom: 1px solid rgba(200, 200, 200, 1);
+  top: 0;
+}
+
+.nav-item {
+  &:hover .nav-anchor {
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+}
+
+.info {
+  margin-top: 32px;
+}
+
+.info-blocks {
+  background-color: $opaque-brand-color;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tb {
+  border: 1px solid black !important;
+}
